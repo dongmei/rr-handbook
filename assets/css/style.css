@@ -2,7 +2,47 @@ html, body {
   height: 100%;
 }
 
+/*----- Font and color -----*/
 
+
+
+.main-panel .content .container-fluid {
+  max-width: 1160px;
+  margin: auto;
+}
+
+.main-panel > .content {
+  position: relative;
+}
+
+/*----- side navigation bar -----*/
+#side-nav nav {
+    font-size: 14px;
+    padding: 12px 0 10px 0;
+    color: black;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#side-nav .list-group-item {
+  background-color: transparent;
+  border: 0;
+  margin-left: 20px;
+}
+
+#side-nav .list-group a {
+  color: rgba(0, 0, 0, 0.78);
+}
+
+
+#side-nav .list-group a:hover, #side-nav .list-group a:focus {
+  color: #00C2C4;
+}
+
+/*----- footer-----*/
 .footer {
   font-weight: normal; 
   position: absolute;
@@ -33,14 +73,6 @@ html, body {
 }
 
 
-.main-panel .content .container-fluid {
-  max-width: 1160px;
-  margin: auto;
-}
-
-.main-panel > .content {
-  position: relative;
-}
 
 /*----- Format hero image and welcome message -----*/
 .hero-container {
@@ -135,7 +167,7 @@ html, body {
   border-radius: 5px;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .cell-small {
   width: calc(50% - 16px);
   }
@@ -180,19 +212,105 @@ html, body {
 
 
 
-/*----- Section Content -----*/
-.container-fluid .section-title {
-  color: red;
+/*----- Chapter Content -----*/
+
+.chapter .section {
+  margin-bottom: 40px;
 }
+
+.chapter .section:before {
+  content: " ";
+  display: block;
+  height: 40px;
+  margin-top: 0;
+  visibility: hidden;
+}
+.section, .section-title, .section-body {
+  display: block;
+  clear: both;
+}
+
+.chapter .section-list > .section > .section-title {
+  color: red;
+  border-top: 1px solid rgba(0,0,0,0.12);
+  padding-top: 15px;
+}
+
+.chapter > .chapter-content > .chapter-intro {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 0;
+  padding: 0 38px 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+.chapter > .chapter-content > .chapter-intro {
+    width: 760px;
+}}
+
+@media screen and (min-width: 1200px) {
+.chapter > .chapter-content > .chapter-intro {
+  width: 960px;
+}}
+
+
+
 .accordion-section-content {
     padding:15px;
     display:none;
 }
 
-.subsection-title {
-  color: blue;
+
+.chapter-intro p, .section-body p, .section-body ul  {
+  max-width: 760px;
 }
 
-.section > p, .section > .subsection > ul  {
-  max-width: 760px;
+.section-body > ul > li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.module {
+  border: none;
+  display: inline-block;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.chapter-content .section-list .section .section-content .section-body .module:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+.module .module-body {
+  display: inline-block;
+  float: left;
+  padding: 0;
+}
+
+.module-figure img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 992px) {
+.module-figure {
+  padding: 0px;
+}}
+
+.section-body .module .module-figure figcaption {
+  box-sizing: border-box;
+}
+
+.section-body .module .module-figure figcaption p {
+  color: #616161;
+  font-size: 14px;
+  line-height: 24px;
 }

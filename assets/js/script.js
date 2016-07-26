@@ -19,4 +19,8 @@ $(document).ready(function(){
       // $('#collapse1').collapse({"toggle": false});
   });
 
+  if ($(window).width() >= 768) {
+    $('.section-content').addClass('in');
+  } 
+
 });

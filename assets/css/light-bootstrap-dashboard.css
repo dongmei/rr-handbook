@@ -140,10 +140,10 @@ body,
 }
 
 a {
-  color: #1DC7EA;
+  color: #00C2C4; /*#1DC7EA;*/
 }
 a:hover, a:focus {
-  color: #42d0ed;
+  color: #FF7E01;
   text-decoration: none;
 }
 
@@ -217,7 +217,7 @@ input:focus {
   width: 260px;
   display: block;
   z-index: 1;
-  color: #fff;
+  color: rgba(0,0,0,0.78);
   font-weight: 200;
   background-size: cover;
   background-position: center center;
