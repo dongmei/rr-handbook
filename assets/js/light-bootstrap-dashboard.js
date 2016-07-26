@@ -13,9 +13,9 @@ $(document).ready(function(){
     lbd.checkSidebarImage();
     
     // Init navigation toggle for small screens   
-    if(window_width <= 991){
-        lbd.initRightMenu();   
-    }
+    // if(window_width <= 991){
+    //     lbd.initRightMenu();   
+    // }
      
     //  Activate the tooltips   
     $('[rel="tooltip"]').tooltip();
