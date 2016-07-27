@@ -1,28 +1,19 @@
 // Load header
 $(document).ready(function() {
-    $('head').load("head.html");
 
-    $('#sidebar-wrapper').load("sidenav.html", function() {
-        $('.nav').children().each(function() {
-            var link = $(this).children("a").prop('href');
-            //console.log(window.location.href);
-            if (link == window.location.href) {
-                $(this).addClass('active');
-            } else {
-                $(this).removeClass('active');
-            }
-        });
-
-
-        // $('#collapse1').collapse({"toggle": false});
+    $('.nav').children().each(function() {
+        var link = $(this).children("a").prop('href');
+        //console.log(window.location.href);
+        if (link == window.location.href) {
+            $(this).addClass('active');
+        } else {
+            $(this).removeClass('active');
+        }
     });
 
-    $('.header-nav').load("header.html", function() {
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
     });
 
 

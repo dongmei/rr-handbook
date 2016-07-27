@@ -1,20 +1,195 @@
 <!doctype html>
 <html lang="en">
 
-<head></head>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Reptile Realm Handbook</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
+</head>
 
 <body>
     <div id="wrapper">
-        <div id="sidebar-wrapper"></div>
-        <div class="main-panel">
-            <div class="header-nav"></div>
-            <div class="hero-container">
-                <img src="assets/img/hero-img.png" alt="Reptile Realm">
-                <h1>Be a docent.</h1>
-                <p>Protect reptiles, inspire visitors.</p>
+        <div id="sidebar-wrapper">
+            <div class="sidebar" data-color="cyan" data-image="assets/img/sidebar-5.jpg">
+                <!--  Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+                Tip 2: you can also add an image using data-image tag -->
+                <div class="sidebar-wrapper">
+                    <div class="logo">
+                        <a class="simple-text">Reptile Realm</a>
+                    </div>
+                    <nav id="side-nav">
+                        <div class="nav">
+                            <div class="panel panel-default panel-sidenav">
+                                <div class="panel-heading panel-heading-sidenav">
+                                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#our-goal">Our Goals</a>
+                      </h4>
+                                </div>
+                                <div id="our-goal" class="panel-collapse collapse">
+                                    <ul class="list-group">
+                                        <a href="#">
+                                            <li class="list-group-item">Corporate Goals</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Station Goals</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-sidenav">
+                                <div class="panel-heading panel-heading-sidenav">
+                                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#at-the-station">At The Station</a>
+                      </h4>
+                                </div>
+                                <div id="at-the-station" class="panel-collapse collapse">
+                                    <ul class="list-group">
+                                        <a href="#">
+                                            <li class="list-group-item">Reptile Realm Station</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Key Exhibits And Specimens</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Training Schedule</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Station Procedures</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-sidenav">
+                                <div class="panel-heading panel-heading-sidenav">
+                                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#facts">
+                            Facts About Reptiles
+                        </a>
+                      </h4>
+                                </div>
+                                <div id="facts" class="panel-collapse collapse">
+                                    <ul class="list-group">
+                                        <a href="mustknow.html">
+                                            <li class="list-group-item">Being Ectothermic</li>
+                                        </a>
+                                        <a href="#chapter-crocodilians">
+                                            <li class="list-group-item">Crocodilians</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Lizards</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Snakes</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Testudines</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Reptile Enrichment</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-sidenav">
+                                <div class="panel-heading panel-heading-sidenav">
+                                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#visitor-interaction">
+                            Visitor Interaction
+                        </a>
+                      </h4>
+                                </div>
+                                <div id="visitor-interaction" class="panel-collapse collapse">
+                                    <ul class="list-group" style="color: black">
+                                        <a href="#">
+                                            <li class="list-group-item">KC Commentary</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Conservation Actions</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Communication with Visitors</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default panel-sidenav">
+                                <div class="panel-heading panel-heading-sidenav">
+                                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#good-to-know">Good-To-Know</a>
+                      </h4>
+                                </div>
+                                <div id="good-to-know" class="panel-collapse collapse">
+                                    <ul class="list-group" style="color: black">
+                                        <a href="#">
+                                            <li class="list-group-item">About Us</li>
+                                        </a>
+                                        <a href="#">
+                                            <li class="list-group-item">Additional Notes</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="footer">
+                        <div class="copyright">
+                            &copy; 2016
+                            <a href="http://zoe4meii.com"></a> made with heart
+                        </div>
+                        <hr>
+                        <a href="https://app.betterimpact.com/Login/Volunteer">Sign up duty</a>
+                        <hr>
+                        <a href="https://app.betterimpact.com/TimeClock">Start duty timeclock</a>
+                    </div>
+                </div>
             </div>
-            <div class="content">
+        </div>
+        <div class="main-panel">
+            <div class="header-nav">
+                <nav class="navbar navbar-default navbar-fixed">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Reptile Realm Handbook</a>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li>
+                                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+                                        <i class="fa fa-dashboard"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="content" data-spy="scroll" data-target="#side-nav" data-offset="50">
                 <div class="container-fluid">
+                    <div class="hero-container">
+                        <img src="assets/img/hero-img.png" alt="Reptile Realm">
+                        <h1>Be a docent.</h1>
+                        <p>Protect reptiles, inspire visitors.</p>
+                    </div>
                     <p>Need a catchup? Check out the must-know below to be bette prepared for your duty.</p>
                     <p>Or, explore the handbook for more.</p>
                     <div class="row">
@@ -46,7 +221,124 @@
                         </div>
                     </div>
                 </div>
+                <div class="container-fluid chapter" id="chapter-crocodilians">
+                    <h1 class="chapter-title">Crocodilians</h1>
+                    <div class="chapter-content">
+                        <div class="chapter-intro">
+                            <p>Crocodilians have roamed the Earth for over 200 million years. They are more closely related to dinosaurs than other living creatures on Earth.Altogether there are 23 species of crocodilians, grouped into 3 families, found in North and South America, Africa, Asia and Australia.There are 14 species of Crocodylidae, 8 species of Alligatoridae (Alligators and Caimans) and only 1 specie of Gavialidae". Saltwater or Indopacific crocodile is not only the largest crocodilian but also the largest of all reptiles.</p>
+                        </div>
+                        <div class="section-list" id="accordion-crocodilians">
+                            <div class="section">
+                                <div class="section-title">
+                                    <h4>
+                                    <a data-toggle="collapse" href="#collapse1">Winning Design</a>
+                                </h4>
+                                </div>
+                                <div id="collapse1" class="section-content collapse">
+                                    <div class="section-body">
+                                        <ul>
+                                            <li>Body structure designed for survival, not changed for last 200 million years.</li>
+                                            <li>Have an elongated snout</li>
+                                            <li>Eyes and nostrils set on top to allow them to have a good view above water, and breathe while body remains submerged</li>
+                                            <li>Without being seen, they are able to ambush prey with a high success rate</li>
+                                            <li>Able to open their mouth to snap at prey and prevent water from entering their windpipe at the same time. Done by closing a flap of cartilaginous flap (palatal valve) at the back of the throat</li>
+                                            <li>Openings of nostrils and ears can be shut when underwater</li>
+                                            <li>Apart from 2 movable eyelids, a 3rd transparent eyelid (nictitating membrane) helps to cover their eyes while underwater</li>
+                                            <li>Long, muscular tail provides power to push forward when swimming</li>
+                                            <li>‘Tail walk’ – using powerful tail as a support to leap out of water to snatch birds</li>
+                                            <li>Crocodilian movements include: swim, belly crawl, high walk, jump and gallop</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="section-title">
+                                    <h4>
+                                    <a data-toggle="collapse" href="#collapse2">Caring Crocodilians</a>
+                                </h4>
+                                </div>
+                                <div id="collapse2" class="section-content collapse">
+                                    <div class="section-body">
+                                        <ul>
+                                            <li>Most caring parents among reptiles</li>
+                                            <li>Mother crocodilians lay a clutch of 35 – 40 eggs each breeding season and guard their nests fiercely throughout incubation period of about 3 months</li>
+                                            <li>After eggs hatch, remain with hatchlings for few weeks to few years (depending on species)</li>
+                                            <li>Female Nile crocodiles use their teeth to crack unhatched eggs in order to free hatchlings within. Hatchlings remain with both parents for several weeks, using their backs as platforms for basking</li>
+                                            <li>Female American alligator look after its young for up to 4 years! It is longest period of parental care for any crocodilians</li>
+                                            <li>On average, at least 80% of eggs die during incubation and about 1% of hatchlings reach maturity as they fall prey to birds, fish and other adult crocodilians.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="section-title">
+                                    <h4>
+                                    <a data-toggle="collapse" href="#collapse3">Boy or Girl?</a>
+                                </h4>
+                                </div>
+                                <div id="collapse3" class="section-content collapse">
+                                    <div class="section-body">
+                                        <div class="module">
+                                            <div class="module-body col-lg-6 col-md-6 col-sm-12">
+                                                <p>Unlike mammals, sex of crocodilians not determined after fertilization, but by incubation temperature. For crocodiles, intermediate temperatures produce males, low and high temperatures produce female hatchlings. Temperature of nest usually varies at different points, a mixture of male and female hatchlings are more common.</p>
+                                            </div>
+                                            <div class="module-figure col-lg-6 col-md-6 col-sm-12">
+                                                <img class="img-responsive" src="assets/img/facts-about-reptiles/crocodilians/crocs-gender.png" />
+                                                <figcaption>
+                                                    <p>Nest tempreature of 32 ~ 33 Celsisus degree produces males, lower and higher temperatures produces females.</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                        <div class="module">
+                                            <div class="module-body col-lg-6 col-md-6 col-sm-12">
+                                                <p>Unlike mammals, sex of crocodilians not determined after fertilization, but by incubation temperature. For crocodiles, intermediate temperatures produce males, low and high temperatures produce female hatchlings. Temperature of nest usually varies at different points, a mixture of male and female hatchlings are more common.</p>
+                                            </div>
+                                            <div class="module-figure col-lg-6 col-md-6 col-sm-12">
+                                                <img class="img-responsive" src="assets/img/facts-about-reptiles/crocodilians/crocs-gender.png" />
+                                                <figcaption>
+                                                    <p>Nest tempreature of 32 ~ 33 Celsisus degree produces males, lower and higher temperatures produces females.</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="section-title">
+                                    <h4>
+                                    <a data-toggle="collapse" href="#collapse4">Intersting Facts About Crocodilians</a>
+                                </h4>
+                                </div>
+                                <div id="collapse4" class="section-content collapse">
+                                    <div class="section-body">
+                                        <ul>
+                                            <li>Most crocodilians can stay underwater for over an hour. The record holder was an American alligator, which remained underwater for 6 hours and 5mins during an experiment conducted in 1925</li>
+                                            <li>‘Crocodile’ comes from the Greek word ‘krokodeilos’, which means lizard</li>
+                                            <li>Crocodilians can snap their jaws with extreme force but the muscles for opening them are very weak. With crocodiles measuring 2metres or less, all you need is a rubber band to keep their mouths shut</li>
+                                            <li>Crocodilians have the sharpest sense of hearing among reptiles, and they are the noisiest. American alligators produce the loudest bellows, which sound like a lion’s roar</li>
+                                            <li>Crocodilians cannot chew. For large prey, they usually hold the victims in water till they drown and then tear off chunks of flesh by spinning, twisting and rolling over repeatedly. Sometimes, they would let parts of a carcass to rot in water before consuming it but that does not mean theyprefer rotting flesh</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="section-title">
+                                    <h4>
+                                    <a data-toggle="collapse" href="#collapse5">Conservation Message</a>
+                                </h4>
+                                </div>
+                                <div id="collapse5" class="section-content collapse">
+                                    <div class="section-body">
+                                        <p>By preying on weak, sickly and old animals, crocodilians help to keep prey populations healthy and maintain the balance of the ecosystem. However, they are both predators and prey of humans. Between 1950s – 1960s, crocodilians were killed in huge numbers for their skin (about 100 million hides were sold).</p>
+                                        <p>Many crocodilians species are critically endangered due to excessive hunting. Pollution, drowning in fishing nets and destruction of mangrove forests are also threats to their continued existence. Crocodile farms that harvest the crocodilians for meat and hides, combined with effective wildlife-protection efforts can take hunting pressure off wild populations. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- END OF content -->
         </div>
     </div>
 </body>
