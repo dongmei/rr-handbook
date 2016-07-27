@@ -231,10 +231,10 @@ input:focus {
   z-index: 4;
 }
 .sidebar .sidebar-background {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   height: 100%;
-  width: 100%;
+  width: inherit;
   display: block;
   top: 0;
   left: 0;
@@ -244,6 +244,7 @@ input:focus {
 .sidebar .logo {
   padding: 10px 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 4;
 }
 .sidebar .logo p {
   float: left;
@@ -355,8 +356,8 @@ body > .navbar-collapse:after,
 body > .navbar-collapse:before {
   display: block;
   content: "";
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: inherit;
   height: 100%;
   top: 0;
   left: 0;
@@ -465,7 +466,7 @@ body > .navbar-collapse[data-color="purple"]:after {
 }
 
 
-.main-panel {
+#main-panel {
   background: rgba(203, 203, 210, 0.15);
   position: relative;
   z-index: 2;
@@ -473,19 +474,19 @@ body > .navbar-collapse[data-color="purple"]:after {
   width: calc(100% - 260px);
   min-height: 100%;
 }
-.main-panel > .content {
+#main-panel > .content {
   padding: 30px 15px;
   /*min-height: calc(100% - 123px);*/
 }
-.main-panel > .footer {
+#main-panel > .footer {
   border-top: 1px solid #e7e7e7;
 }
-.main-panel .navbar {
+#main-panel .navbar {
   margin-bottom: 0;
 }
 
 .sidebar,
-.main-panel {
+#main-panel {
   overflow: auto;
   max-height: 100%;
   height: 100%;
@@ -2820,7 +2821,7 @@ body > .navbar-collapse[data-color="purple"]:after {
     display: none;
   }
 
-  .main-panel {
+  #main-panel {
     width: 100%;
   }
 
