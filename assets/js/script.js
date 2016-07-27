@@ -1,32 +1,47 @@
 // Load header
+
+var chaptercounter = 3;
+
+
 $(document).ready(function() {
-
-    $('.nav').children().each(function() {
-        var link = $(this).children("a").prop('href');
-        console.log(window.location.pathname);
-        if (link == window.location.href) {
-            $(this).addClass('active');
-        } else {
-            $(this).removeClass('active');
-        }
-    });
-
-
-    $('#main-panel').scrollspy({ target: '#side-nav' });
 
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
 
-    $("#chapter-crocodilians").ready(function(){
-        console.log("test");
-        $("#chapter-crocodilians").load("crocodilians.html");
 
-        if ($(window).width() >= 768) {
-            $('.section-content').addClass('in');
+    var t = function chapterCollapse() {
+        chaptercounter -= 1;
+
+        if (chaptercounter === 0) {
+            if ($(window).width() >= 768) {
+                $('.section-content').addClass('in');
+            }
+        }
+
+    };
+
+
+    $("#chapter-crocodilians").load("crocodilians.html", t);
+
+    $("#chapter-snakes").load("snakes.html", t);
+
+    $("#chapter-lizards").load("lizards.html", t);
+
+});
+
+$(window).scroll(function() {
+
+    var position = $(this).scrollTop();
+
+    $('.chapter').each(function() {
+        var target = $(this).offset().top;
+        var id = $(this).attr('id');
+
+        if (position >= target) {
+            $('a').removeClass('active');
+            $("a[href=" + "\"#" + id + "\"" + ']').addClass('active');
         }
     });
-
-    $()
 });

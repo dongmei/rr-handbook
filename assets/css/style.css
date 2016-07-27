@@ -131,18 +131,17 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-#side-nav .list-group a:hover,
-#side-nav .list-group a:focus, #side-nav .list-group a .active {
+#side-nav .list-group a:hover, #side-nav .list-group a:focus, {
+    color: rgba(0, 255, 0, 0.78);
+    font-weight: bold;
+}
+
+#side-nav .list-group .list-group-item  .active {
     color: rgba(0, 255, 0, 0.78);
     font-weight: bold;
 }
 
 
-/*li .active {
-    color: rgba(0, 255, 0, 0.78);
-    font-weight: bold;
-}
-*/
 
 .panel-sidenav {
     background-color: rgba(3, 177, 196, 0.5);
