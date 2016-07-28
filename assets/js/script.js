@@ -15,7 +15,7 @@ $(document).ready(function() {
         chaptercounter -= 1;
 
         if (chaptercounter === 0) {
-            if ($(window).width() >= 768) {
+            if ($(window).width() >= 992) {
                 $('.section-content').addClass('in');
             }
         }
@@ -44,4 +44,12 @@ $(window).scroll(function() {
             $("a[href=" + "\"#" + id + "\"" + ']').addClass('active');
         }
     });
+});
+
+
+$("#side-nav .nav .panel .panel-collapse .list-group .list-group-item").children("a").click(function() {
+    console.log("clicked chapter link in side navbar");
+    if ($(window).width() < 992) {
+        $("#wrapper").toggleClass("toggled");
+    }
 });

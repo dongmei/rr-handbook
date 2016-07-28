@@ -3,11 +3,13 @@ body {
     height: 100%;
 }
 
+
 /*#wrapper {
     min-height: 100vh;
     position: relative;
     top: 0;
 }*/
+
 
 /*#wrapper {
     -webkit-transform: translate3d(0px, 0, 0);
@@ -24,6 +26,7 @@ body {
     background-color: white;
 }*/
 
+
 /* Toggle Styles */
 
 #wrapper {
@@ -33,8 +36,6 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
-
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -51,46 +52,70 @@ body {
     transition: all 0.5s ease;
 }
 
+#main-panel {
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+    padding: 0;
+    margin: auto;
+    overflow: auto;
+}
+
+#wrapper.toggled {}
+
 #wrapper.toggled #sidebar-wrapper {
     width: 260px;
 }
 
-#main-panel {
-    width: 100%;
-    position: absolute;
-    padding: 0;
-}
-
 #wrapper.toggled #main-panel {
-    position: absolute;
     margin-right: -260px;
 }
 
-@media (min-width: 768px) {
+#menu-toggle {
+    display: block;
+}
+
+@media (min-width: 992px) {
     #wrapper {
         padding-left: 260px;
-    }
-    #wrapper.toggled {
-        padding-left: 0;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -o-transition: all 0.7s ease;
+        transition: all 0.7s ease;
     }
     #sidebar-wrapper {
         width: 260px;
-    }
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        -o-transition: all 0.7s ease;
+        transition: all 0.7s ease;
     }
     #main-panel {
         padding: 0;
         position: relative;
+        margin: auto;
+    }
+
+    /* Toggle is not available on medium and large screen
+/*    #wrapper.toggled {
+        padding-left: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
     }
     #wrapper.toggled #main-panel {
         position: relative;
         margin-right: 0;
     }
+    #menu-toggle {
+        display: none !important;
+    }*/
 }
 
-/*----- Leave space for footer -----*/
-.sidebar-wrapper{
+
+/*----- Leave space for footer in sidebar-----*/
+
+.sidebar-wrapper {
     padding-bottom: 160px;
 }
 
@@ -131,17 +156,17 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-#side-nav .list-group a:hover, #side-nav .list-group a:focus, {
+#side-nav .list-group a:hover,
+#side-nav .list-group a:focus,
+{
     color: rgba(0, 255, 0, 0.78);
     font-weight: bold;
 }
 
-#side-nav .list-group .list-group-item  .active {
+#side-nav .list-group .list-group-item .active {
     color: rgba(0, 255, 0, 0.78);
     font-weight: bold;
 }
-
-
 
 .panel-sidenav {
     background-color: rgba(3, 177, 196, 0.5);
@@ -154,6 +179,7 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     border-color: rgba(255, 255, 255, 0.3);
 }
+
 
 /*.panel-title > a {
     color: rgba(255, 255, 255, 0.9);
@@ -189,21 +215,40 @@ body {
     left: 32px;
 }
 
+/*----- Set styles for menu toggler -----*/
+#main-panel .header-nav nav .container-fluid .nav-menu {
+    float: left;
+}
+
+#main-panel .header-nav nav .container-fluid .navbar-header {
+    clear: left;
+}
+
+@media (min-width: 992px) {
+    #main-panel .header-nav nav .container-fluid .nav-menu {
+    display: none;
+}
+/*    #main-panel .header-nav nav .container-fluid .navbar-header {
+        clear: none;
+    }*/
+}
+
 
 /*----- Format hero image and welcome message -----*/
 
-.hero-container {
-    width: 100%;
+#hero-container {
     max-width: 1200px;
-    max-height: 800px;
+    max-height: 600px;
     text-align: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     background: #392f28;
     position: relative;
     color: #ffffff;
+    overflow: hidden;
 }
 
-.hero-container h1 {
+#hero-container h1 {
     font-size: 4.1em;
     font-weight: bold;
     margin: auto;
@@ -215,7 +260,7 @@ body {
     z-index: 1;
 }
 
-.hero-container p {
+#hero-container p {
     font-size: 1.5em;
     margin: auto;
     position: absolute;
@@ -226,8 +271,9 @@ body {
     z-index: 1;
 }
 
-.hero-container img {
+#hero-container img {
     width: 100%;
+    /*background-size: cover;*/
     -webkit-filter: grayscale(100%);
     /* Chrome, Safari, Opera */
     filter: grayscale(100%);
@@ -242,14 +288,14 @@ body {
 }
 
 @media all and (max-width: 768px) {
-    .hero-container {
+/*    #hero-container {
         height: 50vw;
-    }
-    .hero-container h1 {
+    }*/
+    #hero-container h1 {
         font-size: 8vw;
         top: 13vw;
     }
-    .hero-container p {
+    #hero-container p {
         font-size: 3vw;
         top: 27vw;
     }
@@ -258,6 +304,13 @@ body {
 
 /*----- Quick links on Home Page -----*/
 
+.homepage-block-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    position: relative;
+    float: left;
+}
 .shortcut-cell {
     /*  width: 45%; 
   width: 50%;*/
@@ -332,11 +385,11 @@ body {
 
 /*----- Chapter Content -----*/
 
-.chapter .section {
+.chapter-container.section {
     margin-bottom: 40px;
 }
 
-.chapter .section:before {
+.chapter-container.section:before {
     content: " ";
     display: block;
     height: 40px;
@@ -351,13 +404,13 @@ body {
     clear: both;
 }
 
-.chapter .section-list > .section > .section-title {
+.chapter-container.section-list > .section > .section-title {
     color: red;
     border-top: 1px solid rgba(0, 0, 0, 0.12);
     padding-top: 15px;
 }
 
-.chapter > .chapter-content > .chapter-intro {
+.chapter-container> .chapter-content > .chapter-intro {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 0;
@@ -365,13 +418,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .chapter > .chapter-content > .chapter-intro {
+    .chapter-container> .chapter-content > .chapter-intro {
         width: 760px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .chapter > .chapter-content > .chapter-intro {
+    .chapter-container> .chapter-content > .chapter-intro {
         width: 960px;
     }
 }
@@ -421,7 +474,7 @@ body {
     height: auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .module-figure {
         padding: 0px;
     }

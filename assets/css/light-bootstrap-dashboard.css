@@ -485,8 +485,7 @@ body > .navbar-collapse[data-color="purple"]:after {
   margin-bottom: 0;
 }
 
-.sidebar,
-#main-panel {
+.sidebar {
   overflow: auto;
   max-height: 100%;
   height: 100%;
@@ -2816,7 +2815,7 @@ body > .navbar-collapse[data-color="purple"]:after {
   }
 }
 /*          Changes for small display      */
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
   .sidebar {
     display: none;
   }
@@ -3384,7 +3383,7 @@ body > .navbar-collapse[data-color="purple"]:after {
     font-size: 20px;
     margin-right: 10px;
   }
-}
+}*/
 @media (min-width: 992px) {
   .table-full-width {
     margin-left: -15px;
