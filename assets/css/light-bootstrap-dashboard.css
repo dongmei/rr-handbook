@@ -139,14 +139,6 @@ body,
   position: relative;
 }
 
-a {
-  color: #00C2C4; /*#1DC7EA;*/
-}
-a:hover, a:focus {
-  color: #00C590;
-  text-decoration: none;
-}
-
 a:focus, a:active,
 button::-moz-focus-inner,
 input::-moz-focus-inner,
@@ -282,10 +274,10 @@ input:focus {
   opacity: .86;
   border-radius: 4px;
 }
-.sidebar .nav li:hover > a {
-  background: rgba(255, 255, 255, 0.13);
+/*.sidebar .nav li:hover > a {
+  background: rgba(0, 0, 255, 0.13);
   opacity: 1;
-}
+}*/
 .sidebar .nav li.active > a {
   color: #FFFFFF;
   opacity: 1;
@@ -457,6 +449,19 @@ body > .navbar-collapse[data-color="purple"]:after {
   background-size: 150% 150%;
 }
 
+
+
+.sidebar[data-color="gray"]:after,
+body > .navbar-collapse[data-color="purple"]:after {
+  background: #60452C;
+  background: -moz-linear-gradient(top, #60452C 0%, #2F2013 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #60452C), color-stop(100%, #2F2013));
+  background: -webkit-linear-gradient(top, #60452C 0%, #2F2013 100%);
+  background: -o-linear-gradient(top, #60452C 0%, #2F2013 100%);
+  background: -ms-linear-gradient(top, #60452C 0%, #2F2013 100%);
+  background: linear-gradient(to bottom, #60452C 0%, #2F2013 100%);
+  background-size: 150% 150%;
+}
 
 #main-panel {
   background: rgba(203, 203, 210, 0.15);
