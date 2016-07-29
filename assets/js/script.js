@@ -1,6 +1,6 @@
 // Load header
 
-var chaptercounter = 3;
+var chaptercounter = 4;
 
 
 $(document).ready(function() {
@@ -22,12 +22,14 @@ $(document).ready(function() {
 
     };
 
-
+    $("#chapter-ectothermic").load("ectothermic.html", t);
     $("#chapter-crocodilians").load("crocodilians.html", t);
 
     $("#chapter-snakes").load("snakes.html", t);
 
     $("#chapter-lizards").load("lizards.html", t);
+
+    // $("#chapter-testudines").load("testudines.html", t);
 
 });
 
