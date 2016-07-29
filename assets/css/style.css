@@ -550,6 +550,10 @@ body {
     padding: 0 0 20px 20px;
 }
 
+.module-c .module-figure-left-align {
+    padding: 0 20px 20px 0px;
+}
+
 .module img {
     width: 100%;
     height: auto;
