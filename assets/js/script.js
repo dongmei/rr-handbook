@@ -15,7 +15,7 @@ $(document).ready(function() {
         chaptercounter -= 1;
 
         if (chaptercounter === 0) {
-            if ($(window).width() >= 992) {
+            if ($(window).width() >= 768) {
                 $('.section-content').addClass('in');
             }
         }
