@@ -584,7 +584,7 @@ body {
     font-weight: 500;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .module-figure {
         padding: 0px;
     }
@@ -593,9 +593,9 @@ body {
     }
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
     .chapter-container .chapter-body .chapter-topics {
-        display: none;
+        display: none !important;
     }
 }
 
