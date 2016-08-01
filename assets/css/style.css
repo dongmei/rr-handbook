@@ -525,6 +525,7 @@ body {
     padding-top: 20px;
     margin-bottom: 10px;
     display: block;
+    clear: both;
 }
 
 .section-content ul li,
