@@ -516,6 +516,10 @@ body {
     max-width: 760px;
 }
 
+.section-content .module-d p {
+    max-width: 1160px;
+}
+
 .section-content ul li,
 .section-content ol li {
     font-size: 16px;
@@ -584,13 +588,35 @@ body {
     font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
+
+.module-d img {
+    float: right;
+    max-width: 380px;
+    width: 40%;
+    margin: 0 0 20px 20px;
+}
+
+.module-d h3 span {
+    text-transform: capitalize;;
+    color: red;
+}
+
+
+
+@media screen and (max-width: 767px) {
     .module-figure {
         padding: 0px;
     }
     .module-b .module-figure-w-title:nth-child(odd), .module-b .module-figure-w-title:nth-child(even) {
         padding: 0 0 20px 0;
     }
+
+    .module-d img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
