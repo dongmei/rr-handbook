@@ -1,6 +1,6 @@
 // Load header
 
-var chaptercounter = 4;
+var chaptercounter = 5;
 
 
 $(document).ready(function() {
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     $("#chapter-lizards").load("lizards.html", t);
 
-    // $("#chapter-testudines").load("testudines.html", t);
+    $("#chapter-testudines").load("testudines.html", t);
 
 });
 
