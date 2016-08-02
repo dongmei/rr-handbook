@@ -512,13 +512,14 @@ body {
 
 .chapter-intro p,
 .section-content p,
-.section-content ul {
+.section-content ul,
+.section-content ol {
     max-width: 760px;
 }
 
-.section-content .module-d p {
+/*.section-content .module-d p {
     max-width: 1160px;
-}
+}*/
 
 .section .section-content h5 {
     font-weight: 700;
