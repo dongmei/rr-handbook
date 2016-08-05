@@ -1,6 +1,8 @@
 html,
 body {
     height: 100%;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -468,6 +470,12 @@ body {
     padding: 0 38px 40px 0;
 }
 
+.chapter-container > .chapter-body > .chapter-intro p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+
 .chapter-container .chapter-body .chapter-topics {
     border-left: 5px solid #00C2C4;
     padding-left: 20px;
@@ -510,16 +518,16 @@ body {
     display: none;
 }
 
-.chapter-intro p,
+.chapter-intro p {
+    max-width: 1160px;
+}
+
 .section-content p,
 .section-content ul,
 .section-content ol {
     max-width: 760px;
 }
 
-/*.section-content .module-d p {
-    max-width: 1160px;
-}*/
 
 .section .section-content h5 {
     font-weight: 700;
@@ -614,6 +622,10 @@ body {
 .module-d h3 span {
     text-transform: capitalize;;
     color: red;
+}
+
+.chapter-body span {
+    font-weight: bold;
 }
 
 
