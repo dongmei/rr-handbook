@@ -240,6 +240,7 @@ body {
     margin-bottom: 5px;
     font-size: 20px;
     border: 0px;
+    padding-right: 0px;
 }
 
 @media (max-width: 330px) {
@@ -249,7 +250,6 @@ body {
     }
     #menu-toggle {
         padding-left: 6px;
-        padding-right: 16px;
     }
 }
 
