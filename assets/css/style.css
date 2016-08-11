@@ -214,12 +214,14 @@ body {
 
 #main-panel .header-nav nav .container-fluid .nav-menu {
     float: left;
+    display: inline-block;
 }
 
 #main-panel .header-nav nav .container-fluid .navbar-header {
     margin-left: 20px;
     margin-top: 5px;
     overflow: hidden;
+    display: inline-block;
 }
 
 #main-panel .content .container-fluid {
