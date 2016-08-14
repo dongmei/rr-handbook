@@ -645,8 +645,13 @@ body {
 }
 
 .module-c .module-figure-left-align {
-    padding: 0 20px 20px 0px;
+    padding: 0 20px 20px 0;
 }
+
+.module-a .module-figure-row {
+    padding: 0 20px 20px 0;
+}
+
 
 .module img {
     width: 100%;
@@ -719,11 +724,13 @@ body {
     }
 }
 
-.section-content .module .module-figure figcaption {
+/*.section-content .module .module-figure */
+figcaption {
     box-sizing: border-box;
 }
 
-.section-content .module .module-figure figcaption p {
+/*.section-content .module .module-figure */
+figcaption p {
     color: #616161;
     font-size: 14px;
     line-height: 24px;
